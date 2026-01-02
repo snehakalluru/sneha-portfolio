@@ -1,0 +1,112 @@
+:root {
+  --mainTextColor-light: #000;
+  --secondaryTextColor-light: rgb(51, 51, 51);
+  --mainBorderColor-light: #fff;
+  --mainBgColor-light: #fff;
+  --mainLinkColor-light: rgb(255, 55, 0);
+}
+[data-theme="dark"] {
+  --mainTextColor: #fff;
+  --secondaryTextColor: white;
+  --mainLinkColor: rgb(130, 242, 164);
+  --mainBorderColor: chocolate;
+  --mainBgColor: #000;
+  --button-color:var(--button-bg-dark);
+}
+
+* {
+  font-family: Google Sans Flex;
+  line-height: 1.5rem;
+  box-sizing: border-box;
+  color: var(--mainTextColor);
+}
+body {
+  background-color: var(--mainBgColor);
+}
+
+#theme-switcher {
+  position: fixed;
+  top: 1em;
+  right: 1em;
+  display: flex;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.theme {
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  border: 1px solid;
+}
+.theme:hover {
+  height: 30px;
+  width: 30px;
+}
+.theme-dark {
+  background-color: #000;
+}
+.theme-light {
+  background-color: #fff;
+}
+
+p, span, li{
+    color:var(--secondaryTextColor);
+    font-size: 1em;
+}
+a{
+    text-decoration: none;
+    color: var(--mainLinkColor);
+    font-weight: 500;
+}
+li{
+    line-height:1.9rem;
+}
+
+#container-main{
+    max-width:1000px;
+    margin: 0 auto;
+    padding:1em;
+    display: flex;
+    flex-direction: row;
+}
+.section-page{
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+#wrapper-hero{
+    display: flex;
+    align-items: center;
+    gap:4em;
+}
+#bio, a{
+    font-weight: 300;
+}
+#user-name{
+    font-size: 48px;
+    line-height: 1em;
+}
+#profile-pic{
+    width:181px;
+    height: 185px;
+    object-fit:cover;
+    border-radius: 100%;
+    top: 20px;
+    margin:0px auto;
+    display: block;
+}
+#email{
+    color: var(--mainTextColor);
+}
+
+#qualification-list{
+  list-style: none;
+}
+
+#links:hover{
+  color:chocolate;
+  text-decoration: none;
+  transition: color 0.3 ease;
+
+}
