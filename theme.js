@@ -1,20 +1,25 @@
-const themes = document.getElementsByClassName('theme');
+const themeToggle = document.querySelector("#theme-toggle");
+const toggleIcon = themeToggle.querySelector(".toggle-icon");
+const toggleText = themeToggle.querySelector(".toggle-text");
+const storedTheme = localStorage.getItem("theme");
+const systemPrefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
 
-Array.from(themes).forEach(theme => {
-    theme.addEventListener('click', (e) => {
-        document
-            .querySelector("body")
-            .setAttribute("data-theme", e.target.dataset.theme);
-        localStorage.setItem("theme", e.target.dataset.theme);
-    });
-});
+function applyTheme(theme) {
+  document.body.setAttribute("data-theme", theme);
+  localStorage.setItem("theme", theme);
 
-function getThemeOnLoad() {
-    const theme = localStorage.getItem("theme");
-
-    if (theme) {
-        document.querySelector("body").setAttribute("data-theme", theme);
-    }
+  const isDark = theme === "dark";
+  toggleIcon.textContent = isDark ? "☼" : "☾";
+  toggleText.textContent = isDark ? "Light" : "Dark";
+  themeToggle.setAttribute(
+    "aria-label",
+    isDark ? "Switch to light theme" : "Switch to dark theme"
+  );
 }
 
-getThemeOnLoad();
+applyTheme(storedTheme || (systemPrefersDark ? "dark" : "light"));
+
+themeToggle.addEventListener("click", () => {
+  const currentTheme = document.body.getAttribute("data-theme");
+  applyTheme(currentTheme === "dark" ? "light" : "dark");
+});

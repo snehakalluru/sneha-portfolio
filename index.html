@@ -3,155 +3,299 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Digital Resume</title>
-    <link rel="stylesheet" href="./style.css" />
+    <title>Kalluru Sneha | Digital Resume</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,300..800&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <div id="container-main">
-      <section class="section-page" id="wrapper-hero">
-        <img src="sneha_resume_pic.jpg" id="profile-pic" alt="" />
-        <div>
-          <h1 class="user-name">KALLURU SNEHA</h1>
-          <p id="bio">
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Kalluru Sneha resume home">
+        KS
+      </a>
+
+      <nav class="nav-links" aria-label="Resume sections">
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+      </nav>
+
+      <button
+        class="theme-toggle"
+        id="theme-toggle"
+        type="button"
+        aria-label="Switch to dark theme"
+      >
+        <span class="toggle-icon" aria-hidden="true">☾</span>
+        <span class="toggle-text">Dark</span>
+      </button>
+    </header>
+
+    <main id="top">
+      <section class="hero section-band">
+        <div class="hero-content">
+          <p class="eyebrow">AI & ML Student | Full Stack Learner</p>
+          <h1>Kalluru Sneha</h1>
+          <p class="hero-summary">
             Aspiring Computer Science Engineer specializing in Artificial
             Intelligence and Machine Learning, with growing expertise in Full
-            Stack Development. Currently pursuing B.Tech CSE (AI & ML) at
-            Kalasalingam University (2024–2028). Passionate about building
-            intelligent systems and developing user-friendly web applications.
-            Eager to expand technical skills through projects, internships, and
-            research opportunities.
+            Stack Development. I enjoy building intelligent systems and clean,
+            user-friendly web experiences.
           </p>
-          <p id="email">📧snehakalluru91@gmail.com</p>
+
+          <div class="hero-actions" aria-label="Primary contact links">
+            <a class="button primary" href="mailto:snehakalluru91@gmail.com">
+              Email Me
+            </a>
+            <a
+              class="button secondary"
+              href="https://github.com/snehakalluru"
+              target="_blank"
+              rel="noreferrer"
+            >
+              GitHub
+            </a>
+            <a
+              class="button secondary"
+              href="https://www.linkedin.com/in/kalluru-sneha-318253324"
+              target="_blank"
+              rel="noreferrer"
+            >
+              LinkedIn
+            </a>
+          </div>
+        </div>
+
+        <aside class="profile-panel" aria-label="Personal information">
+          <img
+            src="./images/sneha_resume_pic.jpg"
+            alt="Portrait of Kalluru Sneha"
+            class="profile-photo"
+          />
+          <div>
+            <h2>Personal Info</h2>
+            <ul class="info-list">
+              <li><span>Email</span>snehakalluru91@gmail.com</li>
+              <li><span>Degree</span>B.Tech CSE (AI & ML)</li>
+              <li><span>College</span>Kalasalingam University</li>
+              <li><span>Focus</span>AI, ML, Web Development</li>
+            </ul>
+          </div>
+        </aside>
+      </section>
+
+      <section class="section-grid about-section">
+        <div>
+          <p class="section-kicker">About</p>
+          <h2>Curious builder with a product-minded approach.</h2>
+        </div>
+        <div class="about-copy">
+          <p>
+            I am currently pursuing B.Tech CSE (AI & ML) at Kalasalingam
+            University from 2024 to 2028. My learning path combines programming
+            fundamentals, web design, and practical problem solving through
+            projects, certifications, and research-focused work.
+          </p>
+          <p>
+            I am looking for opportunities to strengthen my technical skills
+            through internships, guided projects, and collaborative learning.
+          </p>
         </div>
       </section>
-    </div>
-    
 
-    <section class="section-page">
-      <h2>👩‍🎓About Me</h2>
-      <ul>
-        <li>
-          Passionate about building intelligent systems and user-friendly web
-          applications.
-        </li>
-        <li>
-          Eager to expand technical skills through projects, internships, and
-          research opportunities.
-        </li>
-      </ul>
-    </section>
+      <section class="section-grid" id="experience">
+        <div>
+          <p class="section-kicker">Experience</p>
+          <h2>Hands-on learning through coursework and guided practice.</h2>
+        </div>
 
-    <section class="section-page">
-      <h2>🎯Skills</h2>
-      <ul id="skills-list">
-        <li><strong>Programming Languages</strong> - Python, C</li>
-        <li><strong>Web Development</strong> - HTML, CSS</li>
-        <li>
-          <strong>Tools & Platforms</strong> - VSCode, GithHub, GoogleColab
-        </li>
-      </ul>
-    </section>
+        <div class="project-list">
+          <article class="project-card">
+            <div>
+              <p class="project-tag">Full Stack Training</p>
+              <h3>HCL GUVI Course Work</h3>
+              <p>
+                Practiced frontend fundamentals by building structured pages,
+                styling responsive interfaces, and improving layout consistency.
+              </p>
+            </div>
+            <span>Current</span>
+          </article>
 
-    <section class="section-page">
-      <h2>🎓Education</h2>
-      <ul id="qualification-list">
-        <li>
-          <strong>B.Tech CSE (AI&ML)</strong> - Kalasalingam University,
-          Tamilnadu (2024-2028) - Currently in 4th semester
-        </li>
-        <li>
-          <strong>XII</strong> - Narayana Junior College, Vijayawada (2022-2024)
-          - 94%
-        </li>
-        <li>
-          <strong>X</strong> - Narayana High School, Pulivendula (2022) - 95%
-        </li>
-      </ul>
-    </section>
+          <article class="project-card">
+            <div>
+              <p class="project-tag">Academic Practice</p>
+              <h3>AI & ML Engineering Foundation</h3>
+              <p>
+                Developed programming confidence through Python, C, Google
+                Colab experiments, and classroom problem-solving activities.
+              </p>
+            </div>
+            <span>2024 - Present</span>
+          </article>
+        </div>
+      </section>
 
-    <section class="section-page">
-      <h2>💻Projects</h2>
-      <ul id="projects-list">
-        <h3>Gym Website</h3>
-        <li>Built using HTML and basic CSS</li>
-        <li>Designed layout and navigation for a fitness platform</li>
-        <li>
-          Demonstrated ability to structure webpages and apply styling
-          fundamentals
-        </li>
-      </ul>
-      <ul>
-        <h3>E-Commerce Website</h3>
-        <li>Developed with HTML and CSS</li>
-        <li>
-          Created product listing and styled interface for online shopping
-        </li>
-        <li>
-          Showcased understanding of page structure and user-friendly design
-        </li>
-      </ul>
-    </section>
+      <section class="section-band" id="skills">
+        <div class="section-heading">
+          <p class="section-kicker">Skills</p>
+          <h2>Technical Toolkit</h2>
+        </div>
 
+        <div class="skills-grid">
+          <article class="skill-card">
+            <h3>Programming</h3>
+            <p>Python, C, logic building, algorithm fundamentals</p>
+          </article>
+          <article class="skill-card">
+            <h3>Web Development</h3>
+            <p>HTML, CSS, responsive layouts, theme switching</p>
+          </article>
+          <article class="skill-card">
+            <h3>Tools</h3>
+            <p>VS Code, GitHub, Google Colab, browser debugging</p>
+          </article>
+          <article class="skill-card">
+            <h3>Strengths</h3>
+            <p>Learning quickly, clear documentation, consistent execution</p>
+          </article>
+        </div>
+      </section>
 
-    <section class="section-page">
-      <h2>📃Certifications</h2>
-      <ul id="certificates-list">
-        <li>Full Stack Course - HCL Guvi</li>
-        <li>Python - PythonX</li>
-      </ul>
-    </section>
+      <section class="section-grid" id="projects">
+        <div>
+          <p class="section-kicker">Portfolio</p>
+          <h2>Project Showcase</h2>
+        </div>
 
-    <section class="section-page">
-      <h2 id="patent-list">🏆Patent</h2>
-      <ul>
-        <li>Mechanical Design for Three-in-One Portal Charger</li>
-        <li>Patent filed at Kalasalingam University</li>
-        <li>
-          Designed a multifunctional portable charger integrating charging,
-          power storage, and illumination in a single compact device.
-        </li>
-      </ul>
-    </section>
+        <div class="project-list">
+          <article class="project-card">
+            <div>
+              <p class="project-tag">HTML + CSS</p>
+              <h3>Gym Website</h3>
+              <p>
+                Built a fitness platform layout with clear navigation,
+                structured sections, and responsive styling fundamentals.
+              </p>
+            </div>
+            <a href="https://github.com/snehakalluru" target="_blank" rel="noreferrer">
+              View Work
+            </a>
+          </article>
 
-    <section class="section-page">
-      <h2>🗣️Languages</h2>
-      <ul id="language-list">
-        <li>English</li>
-        <li>Hindi</li>
-        <li>Telugu</li>
-        <li>Tamil</li>
-      </ul>
-    </section>
+          <article class="project-card">
+            <div>
+              <p class="project-tag">Frontend Design</p>
+              <h3>E-Commerce Website</h3>
+              <p>
+                Created product listing pages and a styled shopping interface
+                focused on page structure and user-friendly presentation.
+              </p>
+            </div>
+            <a href="https://github.com/snehakalluru" target="_blank" rel="noreferrer">
+              View Work
+            </a>
+          </article>
 
-    <section class="section-page">
-      <h2>🌐Links</h2>
-      <ul id="links">
-        <li>
-          <a href="https://github.com/snehakalluru" target="_blank">GitHub</a>
-        </li>
-        <li>
+          <article class="project-card">
+            <div>
+              <p class="project-tag">Patent</p>
+              <h3>Three-in-One Portable Charger</h3>
+              <p>
+                Designed a compact charger concept that combines charging, power
+                storage, and illumination in one multifunctional device.
+              </p>
+            </div>
+            <span>Filed at Kalasalingam University</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-band" id="education">
+        <div class="section-heading">
+          <p class="section-kicker">Education</p>
+          <h2>Academic Background</h2>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-item">
+            <time>2024 - 2028</time>
+            <div>
+              <h3>B.Tech CSE (AI & ML)</h3>
+              <p>Kalasalingam University, Tamil Nadu | Currently in 4th semester</p>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <time>2022 - 2024</time>
+            <div>
+              <h3>XII</h3>
+              <p>Narayana Junior College, Vijayawada | 94%</p>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <time>2022</time>
+            <div>
+              <h3>X</h3>
+              <p>Narayana High School, Pulivendula | 95%</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-grid extras-section">
+        <div>
+          <p class="section-kicker">Credentials</p>
+          <h2>Certifications & Languages</h2>
+        </div>
+
+        <div class="extras-grid">
+          <article>
+            <h3>Certifications</h3>
+            <ul>
+              <li>Full Stack Course - HCL GUVI</li>
+              <li>Python - PythonX</li>
+            </ul>
+          </article>
+          <article>
+            <h3>Languages</h3>
+            <div class="language-tags">
+              <span>English</span>
+              <span>Hindi</span>
+              <span>Telugu</span>
+              <span>Tamil</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="contact-section" id="contact">
+        <p class="section-kicker">Contact</p>
+        <h2>Open to internships, projects, and learning opportunities.</h2>
+        <div class="contact-links">
+          <a href="mailto:snehakalluru91@gmail.com">snehakalluru91@gmail.com</a>
           <a
-            href="https://www.linkedin.com/in/kalluru-sneha-318253324?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+            href="https://github.com/snehakalluru"
             target="_blank"
-            >LinkedIn</a
+            rel="noreferrer"
           >
-        </li>
-        <li><a href="mailto:snehakalluru91@gmail.com">Email</a></li>
-      </ul>
-    </section>
-
-    <div id="theme-switcher">
-      <div class="theme" id="theme-light" data-theme="light"></div>
-      <div class="theme" id="theme-dark" data-theme="dark"></div>
-    </div>
+            GitHub
+          </a>
+          <a
+            href="https://www.linkedin.com/in/kalluru-sneha-318253324"
+            target="_blank"
+            rel="noreferrer"
+          >
+            LinkedIn
+          </a>
+        </div>
+      </section>
+    </main>
 
     <script src="./theme.js"></script>
   </body>
 </html>
-
